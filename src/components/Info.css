@@ -1,0 +1,131 @@
+.info {
+  font-family: 'Inter', sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 41.25rem; */
+  margin-right: 100px;
+}
+
+.info__container {
+  margin: 0 1.25rem;
+  /* max-width: 37rem; */
+  /* display: flex;
+    flex-direction: column;
+    align-items: center */
+}
+
+.info__data {
+  margin-left: 27px;
+}
+
+.info__header1,
+.info__header2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.info__header2 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+.info__para {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+
+.info__svg {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1290px) {
+  .info {
+    margin-right: 0px !important;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1260px) {
+  .info__container {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .info__data1 {
+    margin-bottom: 630px;
+  }
+}
+
+@media (max-width: 960px) {
+  .info {
+    max-width: 100%;
+  }
+
+  .info__svg {
+    width: 100% !important;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 683px) {
+  .info__data1 {
+    margin-bottom: 720px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info__data1 {
+    margin-bottom: 610px;
+  }
+  .info__svg {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 540px) and (min-width: 539px) {
+  .info__data1,
+  .info__data2 {
+    min-width: 190% !important;
+  }
+
+  .info__data1 {
+    margin-bottom: 700px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .info {
+    margin: 0px;
+    margin-left: 10px;
+  }
+  .info__header1 {
+    font-size: 1.5rem;
+  }
+  .info__header2 {
+    font-size: 1rem;
+  }
+  .info__data1 {
+    margin-bottom: 700px;
+  }
+  .info__svg {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .info__svg {
+    margin-top: -15px;
+  }
+}

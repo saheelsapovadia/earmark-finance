@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@media (min-width:640px){
+    .bg-vhite{
+       
+    background: linear-gradient(270deg,#fff 50%,rgba(0,0,0,0) 0) !important;
+    }
+    .chart{
+        left: calc(100vw - 38% ) !important;
+    }
+    
+    .app{
+        left: calc(100vw - ( 33%  + 24px)) !important;
+        
+    }
+}
+.app, .chart{
+    left: 24px;
+}
+.app , .app>img{
+    height: 488px;
+}
+.app-filler{
+    height: 439px;;
+}
+.chart-filler{
+    height: 420px;
+}
+
+@media (min-width:1024px){
+    .chart{
+        left: calc(100vw - 50%);
+        max-width: 629px;
+    }
+    .app-filler{
+        height: 668px;
+    }
+    .app, .app>img{
+        height: 779px;
+    }
+    .app>img{
+        width: 875px;
+    }
+    .app{
+        left: calc(100vw - (50% + 24px)) !important;
+        max-width: 875px;
+    }
+}
+

@@ -1,0 +1,144 @@
+.logo {
+}
+.nav {
+  position: relative;
+}
+.heading {
+  line-height: 64px;
+  font-family: 'Bree Serif', serif;
+}
+.heading-sub {
+  line-height: 30px;
+}
+.header-gradTheory {
+  z-index: 20;
+  position: absolute;
+  padding: 6px 12px;
+  /* top: 84px; */
+  left: 30px;
+  display: none;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.nav-gradtheory a:first-child {
+  cursor: pointer;
+  font-weight: 600;
+}
+.nav-gradtheory > div:first-child {
+  padding: 6px 12px;
+}
+.nav-gradtheory > div:first-child:hover {
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 6px 12px;
+  background-color: rgba(171, 132, 233, 0.589);
+}
+.nav-gradtheory:hover {
+}
+.nav-gradtheory:hover .header-gradTheory {
+  display: block;
+}
+.grad-con {
+  position: relative;
+  z-index: 20;
+  /* padding: 2rem 0 0; */
+  margin-bottom: 0;
+}
+.grad-con > .content {
+  background: #fff;
+  -webkit-box-shadow: 0 8px 16px 0 rgb(11 3 45 / 20%);
+  box-shadow: 0 8px 16px 0 rgb(11 3 45 / 20%);
+  border-radius: 12px;
+  padding: 4rem;
+  width: 1100px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.modal {
+  margin-top: 25px;
+  margin-left: 20px;
+  flex-direction: column;
+}
+.content > .coll:nth-child(2) {
+  /* margin-top: 20px; */
+}
+.content > .coll {
+  margin-right: 0.8rem;
+}
+.content > .coll:last-child {
+  margin-right: 0;
+}
+.coll .title {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 800;
+  color: rgba(145, 79, 250, 0.938);
+  text-transform: uppercase;
+  margin: 10px 10px 1rem;
+}
+.coll hr {
+  margin-bottom: 10px;
+}
+/* .coll > div:first-child {
+  display: flex;
+  flex-direction: row;
+} */
+.op {
+  cursor: pointer;
+  padding: 8px 10px 10px;
+}
+.op:hover {
+  border-radius: 10px;
+  background-color: #f4f6f8;
+}
+.op > div > p {
+  font-weight: 900;
+}
+.coll > .op > p:last-child {
+  color: #637381;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  z-index: 10;
+}
+@media (max-width: 770px) {
+  .header-gradTheory {
+    display: none;
+  }
+}
+@media (max-width: 415px) {
+  .op > div > p {
+    font-size: 1rem;
+  }
+  .coll .title {
+    margin-bottom: 0px;
+  }
+  .coll {
+    margin-bottom: 20px;
+  }
+  .coll hr {
+    display: none;
+  }
+}
